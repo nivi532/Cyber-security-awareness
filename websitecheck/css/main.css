@@ -180,8 +180,8 @@ body {
 
 .v5_109 {
   width: 100%;
-  height: 1640px;
-  background: rgba(49,49,49,1);
+  height: 1200px;
+  background: #002c3e;
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -190,7 +190,7 @@ body {
 }
 .v5_110 {
   width: 100%;
-  height: 790px;
+  height: 650px;
   background: url("../images/v5_116.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -205,32 +205,23 @@ body {
   width: 601px;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 401px;
+  top: 370px;
   left: 619px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: Medium;
   font-size: 100px;
   opacity: 1;
   text-align: center;
 }
-.v5_112 {
-  width: 494px;
-  height: 462px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 1011px;
-  left: 80px;
-  overflow: hidden;
-}
+
 .v5_113 {
   padding: 10px 10px;
   width: 370px;
-  color: rgba(0,0,0,1);
+  color: white;
   position: absolute;
-  top: 1064px;
+  top: 700px;
   left: 142px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: Medium;
   font-size: 40px;
   opacity: 1;
@@ -238,13 +229,13 @@ body {
 }
 .v5_114 {
   width: 487px;
-  color: rgba(255,255,255,1);
+  color: rgb(233, 233, 233);
   position: absolute;
-  top: 992px;
+  top: 700px;
   left: 690px;
-  font-family: Raleway;
-  font-weight: Regular;
-  font-size: 22px;
+  font-family: Poppins;
+  font-weight: Thin;
+  font-size: 18px;
   opacity: 1;
   text-align: center;
   padding-top: 30px;
@@ -270,7 +261,7 @@ body {
 #html {
   color:white;
   font-size: 20px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: Medium;
 }
 
@@ -309,11 +300,10 @@ body {
 }
 
 .text {
-    color:black;
+  color: rgb(235, 235, 235);;
   font-size: 20px;
-  font-family: Raleway;
-  font-weight: Medium;
-  font-weight: bold;
+  font-family: Quicksand;
+  font-weight: thin;
 }
 
 .input-field {

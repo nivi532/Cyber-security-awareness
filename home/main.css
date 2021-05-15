@@ -1,9 +1,104 @@
+
+/*hamburger menu*/
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 24px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f7444e;
+  transition-duration: .50s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color:#f7f8f3;
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 20px 0px 0px 26px ;
+  color: #002c3e;
+  font-family: Poppins,sans-serif;
+  font-weight: thin;
+  font-size: large;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  color: #f7444e;
+}
+.menu_head{
+  display: block;
+  padding: 30px 0px 0px 24px;
+  color: #002c3e;
+  font-family: Poppins,sans-serif;
+  font-weight: bold;
+  font-size:1.5em;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+
+/*main*/
 * {
   box-sizing: border-box;
   margin: auto;
 }
 body {
   font-size: 14px;
+  background-color:#002c3e ;
 }
 .v3_2 {
   width: 100%;
@@ -22,7 +117,7 @@ body {
   width: 512px;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 360px;
+  top: 340px;
   font-family: Poppins;
   font-weight: SemiBold;
   font-size: 20px;
@@ -31,7 +126,7 @@ body {
 }
 .v5_46 {
   width: 250px;
-  height: 74px;
+  height: 70px;
   background: rgba(247,68,78,1);
   opacity: 1;
   position: absolute;
@@ -45,20 +140,21 @@ body {
   top: 475px;
   justify-content: center;
   align-items: center;
-  font-family: Raleway;
-  font-weight: bold;
+  font-family: Quicksand;
   font-size: 25px;
   opacity: 1;
   text-align: center;
+  text-decoration: none;
 }
 .v5_48 {
   width: 863px;
   height: 162px;
-  font-family: Raleway;
+  position:absolute;
+  font-family: Quicksand;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 250px;
-  font-family: Raleway;
+  top: 210px;
+  font-family: Quicksand;
   font-weight: bolder;
   font-size: 83px;
   opacity: 1;
@@ -186,7 +282,7 @@ body {
 }
 .v5_63 {
   width: 100%;
-  height: 564px;
+  height: 580px;
   background: rgba(244,244,244,1);
   opacity: 1;
   position: absolute;
@@ -346,7 +442,7 @@ body {
 }
 .v5_78 {
   width: 600px;
-  font-family: Raleway;
+  font-family: Quicksand;
   color: rgba(255,255,255,1);
   display: flex;
   justify-content: center;
@@ -359,7 +455,7 @@ body {
 }
 .v5_103 {
   font-size: 80px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-style: normal;
   font-weight: bolder;
   width: 600px;
@@ -399,13 +495,16 @@ body {
   width: 323px;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 23px;
+  top: 20px;
   left: 0px;
-  font-family: Raleway;
-  font-weight: bold;
+  font-family: Quicksand;
   font-size: 18px;
   opacity: 1;
   text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  
 }
 .v5_84 {
   width: 100%;
@@ -464,15 +563,15 @@ body {
   width: 323px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 20px;
-  font-family: Raleway;
+  top: 18px;
+  font-family: Quicksand;
   font-weight: bolder;
   left: 0px;
-  font-family: Raleway;
-  font-weight: ExtraBold;
+  font-family: Quicksand;
   font-size: 18px;
   opacity: 1;
   text-align: center;
+  text-decoration: none;
 }
 .v5_95 {
   width: 323px;
@@ -502,20 +601,20 @@ body {
   font-weight: bold;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 0px;
-  font-family: Raleway;
-  font-weight: ExtraBold;
+  font-family: Quicksand;
   font-size: 18px;
   opacity: 1;
   text-align: center;
+  text-decoration: none;
 }
 .v5_86 {
   width: 736px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 3060px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: Light;
   font-size: 18px;
   opacity: 1;
@@ -526,7 +625,7 @@ body {
   color: rgba(255,255,255,1);
   position: absolute;
   top: 2050px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: Light;
   font-size: 18px;
   opacity: 1;
@@ -537,7 +636,7 @@ body {
   color: rgba(255,255,255,1);
   position: absolute;
   top: 3010px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: Bold;
   font-size: 45px;
   opacity: 1;
@@ -548,7 +647,7 @@ body {
   color: rgba(255,255,255,1);
   position: absolute;
   top: 2000px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: Bold;
   font-size: 45px;
   opacity: 1;
@@ -556,7 +655,7 @@ body {
 }
 .v5_90 {
   width: 666px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-size: 25px;
   color: rgba(255,255,255,1);
   position: absolute;
@@ -577,7 +676,7 @@ body {
   align-items: center;
   top: 2550px;
   font-size: 85px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: bolder;
   left: 10px;
   opacity: 1;
@@ -585,7 +684,7 @@ body {
 }
 .v5_98 {
   width: 666px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-size: 20px;
   color: rgba(255,255,255,1);
   display: flex;
@@ -601,7 +700,7 @@ body {
   width: 666px;
   font-size: 83px;
   right: -50px;
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: bold;
   color: rgba(255,255,255,1);
   position: absolute;

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
 	<link href="./css/main.css" rel="stylesheet" />
 	<link rel="icon" type="image/icon type" href="images/logo.png" />
@@ -16,8 +17,8 @@
 			<h5>Website Validator</h5>
 			<div class="bar html delay-html" id="html"></div>
 		<span id="demo"></span>
-		<p class="text">Enter Website URL:</p>
-              <input type="text" name="url" class="input-field" id="url" size="45" placeholder="Example: testing.in, tester.inc" />
+		<p class="text">Enter Website URL</p>
+              <input type="text" name="url" class="input-field" id="url" size="45" placeholder="   amazon.in" />
 		<button name="submit" class="submit btn" onclick="check();">Check</button>
 		<script type="text/javascript">
 			var x=document.querySelector(':root')
@@ -26,7 +27,7 @@
 				var url = document.getElementById('url').value
 				var length = url.length
 				if (length === 0)
-				document.getElementById('demo').innerHTML = "Please enter a url"
+				document.getElementById('demo').innerHTML = ""
 				else{
 					html.style.visibility='visible'
 					var lastIndex = url.lastIndexOf('.')
@@ -40,7 +41,7 @@
 					x.style.setProperty('--name', width)
 					document.getElementById('html').innerHTML = width
 					document.getElementById('html').title = "This website is "+ width +" safe."
-					document.getElementById('html').style.background="red";
+					document.getElementById('html').style.background="#f7444e";
 					}
 					else{
 						var width=Math.floor(Math.random() * 50) + 50
