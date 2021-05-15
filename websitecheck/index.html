@@ -14,7 +14,7 @@
 		<div class="v5_112"></div>
 		<span class="v5_113">
 			<h5>Website Validator</h5>
-			<div class="bar html delay-html tooltip" id="html"><span class="tooltiptext" id="tooltiptext"></span></div>
+			<div class="bar html delay-html" id="html"></div>
 		<span id="demo"></span>
 		<p class="text">Enter Website URL:</p>
               <input type="text" name="url" class="input-field" id="url" size="45" placeholder="Example: testing.in, tester.inc" />
@@ -39,7 +39,7 @@
 					width=width+'%'
 					x.style.setProperty('--name', width)
 					document.getElementById('html').innerHTML = width
-					document.getElementById('tooltiptext').innerHTML = "This site is "+width+ " safe."
+					document.getElementById('html').title = "This website is "+ width +" safe."
 					document.getElementById('html').style.background="red";
 					}
 					else{
@@ -47,7 +47,7 @@
 					width=width+'%'
 					x.style.setProperty('--name', width)
 					document.getElementById('html').innerHTML = width
-					document.getElementById('tooltiptext').innerHTML = "This site is "+width+ " safe."
+					document.getElementById('html').title = "This website is "+ width +" safe."
 					document.getElementById('html').style.background="green";
 					}
 				}
