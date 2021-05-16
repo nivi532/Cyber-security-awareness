@@ -206,12 +206,12 @@ body {
   color: rgba(255,255,255,1);
   position: absolute;
   top: 370px;
-  left: 619px;
+  left: 109px;
   font-family: Quicksand;
   font-weight: Medium;
-  font-size: 100px;
+  font-size: 80px;
   opacity: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .v5_113 {
@@ -231,7 +231,7 @@ body {
   width: 487px;
   color: rgb(233, 233, 233);
   position: absolute;
-  top: 700px;
+  top: 720px;
   left: 690px;
   font-family: Poppins;
   font-weight: Thin;
@@ -320,4 +320,15 @@ body {
   border: 1px grey;
   outline: none;
 }
-
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+ 
+body::-webkit-scrollbar-track {
+   background-color: #002c3e ;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color:#f7444e ;
+  border-radius: 25px;
+}
