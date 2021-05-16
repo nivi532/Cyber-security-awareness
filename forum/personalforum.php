@@ -17,7 +17,7 @@ $email=stripslashes($email);
 <div class="sidenav">
   <a href="forum.php">Forum</a>
   <a href="personalforum.php" id="formenu">Saved</a>
-  <a href="#">Logout</a>
+  <a href="logout.php" >Logout</a>
   <div class="insta">
     <a href="https://www.instagram.com/cybsec_awarenx/">Followers on Instagram</a>
     <img src="insta.jpg" width="50px" height="50px">
