@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <?php
-        session_start();
-        $_SESSION['email']=$email;
-        echo $email;
-  ?>
+<?php
+session_start();
+$email=$_SESSION['email'];
+$email=stripslashes($email);
+?>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
   <link href="../forum/main.css" rel="stylesheet" />
@@ -29,8 +29,28 @@
 </span>
 <br><br><br>
 <br>
-<div class="main">
-  
+<div class="main" name="main">
+  <table border="2">
+    <tr>
+      <td>Questions</td>
+    </tr>
+  <?php
+    $link = new mysqli('localhost','root','','cyber_security');
+    if($link->connect_error)
+    {
+        die("Error");
+    }
+    $sql = "SELECT * FROM `$email`";
+    $result=$link->query($sql);
+    while($data = mysqli_fetch_assoc($result))
+    {
+      ?>
+      <tr>
+        <td><?php echo $data['questions'];?></td>
+      </tr>
+      <?php
+    }
+  ?>
 </div>
 </body>
 </html>

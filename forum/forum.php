@@ -18,7 +18,6 @@
   <form method="POST" action="savedforum.php">
     <a href="personalforum.php">Saved</a>
     <?php
-        echo $email;
         $_SESSION['email']=$email;
     ?>
   </form>
@@ -39,7 +38,6 @@
     <textarea required id="askques" name="askquestion" placeholder="  Ask your question here !"></textarea>
     <button id="ask">POST QUESTION</button>
     <?php
-        echo $email;
         $_SESSION['email']=$email;
     ?>
 </form>
