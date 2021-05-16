@@ -2,11 +2,11 @@
 ## PROJECT REPORT
 
 ### TEAM MEMBERS:
-Sudarsan Kumar N (Team leader)  
-Sudharsan G V
-Ramyaa P
-Niveditha B
-Sowmya J
+- Sudarsan Kumar N (Team leader)  
+- Sudharsan G V
+- Ramyaa P
+- Niveditha B
+- Sowmya J
 
 ### PROJECT ABSTRACT:
 Our project is focused on cyber security awareness .If you are new to this part of the world and just starting out, this is the great place to start with. Our vision is to contribute the very best instructive and educational environment to our users through our well defined and interactive website. 
