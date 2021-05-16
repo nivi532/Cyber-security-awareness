@@ -38,5 +38,5 @@ None
 Github
 
 ### VIDEO LINK:
-https://youtu.be/GxXs6yR1HrY
+https://www.youtube.com/watch?v=pdpjqXhLHdw
 
